@@ -1,0 +1,56 @@
+/*
+Selección de etiquetas para colocarle estilos:
+1. POr medio del atributo style en la etiquet ejemplo: 
+<p style="color:black";>, es una mala práctica
+2. Por medio de la etiqueta style ejemplo: 
+<style>
+    1. seleccionar la etiqueta: por etiqueta, por class o por id
+    2. coloco el estilo en forma de key:valor;
+</style>
+3. Por medio de un archivo de estilo y se enlaza en el HTML a traves de la etiqueta link 
+4. Selectores:
+  4.1.  * -> selector universal
+
+  colores
+  #2D3E40
+  #387373
+  #93BFB7
+  #97A6A0
+  #E4F2E7
+  #E6F7F1
+  */
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/*seleccion por etiquetas para colocarle estilos*/
+h1{
+
+    text-align: center;
+    font-size: 50px;
+    margin: 2%;
+    border-radius: 20px;
+    color: #2D3E40;
+    background-color: #E4F2E7;
+}
+
+body{
+    position: relative;
+    top: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+header{
+    background-color: #2D3E40;
+    position: sticky;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    box-shadow: 0px 2px 3px #387373 ;
+    border-radius: 0px 0px 10px 10px;
+    z-index: 2;
+}
+
