@@ -146,3 +146,122 @@ h1{
     padding: 1.5%;
     text-align: justify;
   }
+
+
+----
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background: url('background.jpg') no-repeat center center/cover;
+    color: white;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.search-bar {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.nav-links .nav-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+.nav-links .nav-btn.active,
+.nav-links .nav-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+/* Sección principal */
+.main-content {
+    padding: 20px;
+}
+
+/* Destacado (Película principal) */
+.highlight {
+    display: flex;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.highlight img {
+    width: 200px;
+    border-radius: 15px;
+}
+
+.highlight-info {
+    margin-left: 20px;
+}
+
+.highlight-info h2 {
+    margin: 0;
+}
+
+.buttons {
+    margin-top: 10px;
+}
+
+.watch-btn, .download-btn {
+    background: white;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+/* Recomendaciones */
+.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.movie-card {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.movie-card img {
+    width: 100%;
+    border-radius: 10px;
+}
